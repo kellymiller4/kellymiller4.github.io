@@ -1,0 +1,117 @@
+@keyframes linkhover_colors {
+    0%, 100%   {color: $cyan;}
+    25%  {color: $magenta;}
+    75%  {color: $yellow;}
+}
+
+@keyframes linkhover_background {
+    0%, 100%   {background-color: $cyan;}
+    25%  {background-color: $magenta;}
+    75%  {background-color: $yellow;}
+}
+
+@keyframes outline_color{
+  0%, 100%{outline: 1px solid $cyan;}
+  25%,    {outline: 1px solid $magenta;}
+  75%,    {outline: 1px solid $yellow;}
+}
+
+@keyframes padding_right{
+  from{ padding-right: 20px;}
+  to{ padding-right: 50px; }
+}
+nav{
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  ul{
+    li{
+      text-align: right;
+      a{
+        text-align: left;
+        color: black;
+        outline: 1px solid black;
+        margin: 5px 0;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 1s;
+        i{
+          margin-right: 10px;
+        }
+        &:hover{
+          animation: 
+          //linkhover_colors 3s ease-out 0s infinite,
+          //linkhover_background 3s ease-out 0s infinite,
+          outline_color 3s ease-out 0s infinite, 
+          padding_right .5s ease-out 0s forwards;
+          i{
+            animation: linkhover_colors 3s ease-out 0s infinite;
+            }
+          }
+        }
+      }
+    }
+  }
+
+section{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+//  transform: translate(-50%, -50%);
+  z-index: 5;
+  aside{
+    width: 50%;
+    background: rgba(255,255,0,.5);
+    display: inline-block;
+    padding: 5%;
+      h1{
+        color: $cyan;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        margin-left: -25%;
+        opacity: 1;
+        font-size: 2em;
+        letter-spacing: .5em;
+      }
+    p{
+      color: black;
+      font-size: 1em;
+      line-height: 1.25em;
+      margin-left: -25%;
+    }
+  }
+}
+
+div{
+  max-width: 300px;
+  position: absolute;
+  bottom: 20%;
+  right: 25%;
+  transform: translate(0%, 0%);
+//  display: none;
+    img{
+    max-width: 100%;
+  }
+}
+
+footer{
+  content: '';
+  position: fixed;
+  bottom: 50px;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to right, $cyan, $magenta, $yellow);
+  mask: url(../images/dots.svg);
+  mask-repeat: repeat-x;
+  mask-size: contain;
+}
+
+@media (max-width: 768px){
+  nav ul li a{
+    span{
+      display: none;
+    }
+  }
+}
