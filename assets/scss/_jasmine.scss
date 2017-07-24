@@ -20,7 +20,9 @@
   from{ padding-right: 20px;}
   to{ padding-right: 50px; }
 }
-nav{
+
+.jasmine{
+  nav{
   position: absolute;
   right: 0;
   z-index: 10;
@@ -115,3 +117,5 @@ footer{
     }
   }
 }
+}
+
