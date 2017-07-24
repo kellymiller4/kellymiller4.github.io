@@ -1,0 +1,52 @@
+main{
+  display: flex;
+}
+
+#left{
+  width: 50%;
+  background: pink;
+  padding: 5%;
+  img{
+    max-width: 100%;
+    outline: 10px solid red;
+  }
+}
+
+#right{
+  width: 50%;
+  padding: 8% 5% 5%;
+}
+section{
+  background: white;
+  display: inline-block;
+  height: 100vh;
+  article{
+    columns: 2 200px;
+  }
+  h1{
+    font-family: 'Cardo', serif;
+    font-size: 5rem;
+    font-style: italic;
+    color: grey;
+    text-align: center;
+  }
+  h3{
+    font-family: 'Cardo', serif;
+    color: $pink;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 15px 0;
+  }
+  p{
+    font-family: 'Cardo', serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+  }
+  a{
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: $pink;
+  }
+}
