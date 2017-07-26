@@ -1,0 +1,87 @@
+#grid-landing-page{
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(10, 1fr);
+
+	.gradient-background{
+		background-image: linear-gradient(blue, $pink) !important;
+  		background-size: cover;
+  		background-position: center;
+  		background-attachment: fixed;  /* <- here it is */	
+  	}
+
+	.alert{
+		background: pink;
+		grid-column: 1 / span 10;
+		grid-row: 1 / span 1;
+	}
+	.name{
+		background: lightslategray;
+		grid-area: 2 / 3 / 4 / 7;
+	}
+	.description{
+		background: papayawhip;
+		grid-area: 2 / 7 / 3 / 11 ;
+	}
+	.image{
+		background: teal;
+		grid-area: 3 / 7 / 5 / 10;
+	}
+	.welcome{
+		background: gray;
+		grid-area: 5 / 5 / 6 / 11;
+	}
+	#instagram{
+		background: magenta;
+		grid-area: 2 / 1 / 3 / 2;
+	}
+	#behance{
+		background: lightgray;
+		grid-area: 2 / 2 / 3 / 3 ;
+	}
+	#twitter{
+		background: skyblue;
+		grid-area: 3 / 2 / 4 / 3;
+	}
+	#linkedin{
+		background: blue;
+		grid-area: 4 / 1 / 5 / 2;
+		}
+	#dribbble{ 
+		background: rebeccapurple;
+		grid-area: 5 / 2 / 6 / 3;
+	}
+	#github{
+		background: orange;
+		grid-area: 5 / 4 / 6 / 5;
+	}
+	#resume{
+		background: navy;
+		grid-area: 4 / 3 / 5 / 5;
+	}
+	#email{
+		background: green;
+		grid-area: 4 / 5 / 5 / 6;
+	}
+	.filler{
+		background: pink;
+	}
+	.one{
+		grid-area: 3 / 1 / 4 / 2;
+	}
+	.two{
+		grid-area: 3 / 10 / 5 / 11;
+	}
+	.three{
+		grid-area: 4 / 2 / 5 / 3;
+	}
+	.four{
+		grid-area: 4 / 6 / 5 / 7;
+	}
+	.five{
+		grid-area: 5 / 1 / 6 / 2;
+	}
+	.six{
+		grid-area: 5 / 3 / 6 / 4;
+	}
+}
