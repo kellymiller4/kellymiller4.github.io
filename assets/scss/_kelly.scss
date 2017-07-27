@@ -5,7 +5,7 @@
 
 #left{
   width: 50%;
-  background: pink;
+  background: $pink;
   padding: 5%;
   img{
     max-width: 100%;
@@ -33,7 +33,7 @@ section{
   }
   h3{
     font-family: 'Cardo', serif;
-    color: $pink;
+    color: $pink-shade;
     font-size: 1.5rem;
     line-height: 2rem;
     margin: 15px 0;
@@ -48,7 +48,7 @@ section{
     font-family: 'Cardo', serif;
     font-weight: 400;
     text-decoration: none;
-    color: $pink;
+    color: $pink-shade;
   }
 }
 }
